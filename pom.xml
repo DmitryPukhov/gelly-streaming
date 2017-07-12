@@ -13,26 +13,28 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <scala.binary.version>2.11</scala.binary.version>
+        <flink.version>1.3.0</flink.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-gelly_2.10</artifactId>
-            <version>1.2.0</version>
+            <artifactId>flink-gelly_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.10</artifactId>
-            <version>1.2.0</version>
+            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.10</artifactId>
+            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
             <type>test-jar</type>
-            <version>1.2.0</version>
+            <version>${flink.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -45,8 +47,8 @@
 
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-test-utils_2.10</artifactId>
-            <version>1.2.0</version>
+            <artifactId>flink-test-utils_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
             <scope>test</scope>
         </dependency>
 
